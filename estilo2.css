@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url('roblox.jpeg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  min-height: 100vh;
-}
-
 .sidebar {
   width: 220px;
   background-color: rgba(0, 0, 0, 0.85);
