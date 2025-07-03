@@ -1,46 +1,80 @@
-body {
-  background-image: url('roblox1.jpg'); /* imagem de fundo da página */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  color: #ffffff;
+  box-sizing: border-box;
 }
 
-.container {
-  background: rgba(0, 0, 0, 0.75); /* fundo escuro translúcido para legibilidade */
-  padding: 40px;
-  margin: 60px auto;
-  max-width: 800px;
-  border-radius: 20px;
+body {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('roblox_background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px 20px;
+  position: fixed;
+  height: 100%;
+  border-right: 3px solid #00c3ff;
+}
+
+.sidebar h2 {
+  color: #00c3ff;
+  font-size: 26px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-h1 {
-  font-size: 36px;
-  color: #00c3ff;
+.sidebar ul {
+  list-style: none;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.6;
+.sidebar ul li {
+  margin-bottom: 20px;
 }
 
-.botao {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #00c3ff;
-  color: #000;
-  font-weight: bold;
+.sidebar ul li a {
+  color: white;
   text-decoration: none;
-  border-radius: 10px;
+  font-weight: bold;
   transition: 0.3s;
 }
 
-.botao:hover {
-  background-color: #009fd6;
-  color: white;
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  color: #00c3ff;
+}
+
+.content {
+  margin-left: 240px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  flex: 1;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00c3ff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p, ul {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul li {
+  margin-left: 20px;
 }
